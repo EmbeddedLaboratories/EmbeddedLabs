@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #1c1c1d;
+  --ink: #e6e6e6;
+  --ink-70: rgba(230, 230, 230, 0.7);
+  --rule: #333;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Jost";
+  color: var(--ink);
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost";
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
