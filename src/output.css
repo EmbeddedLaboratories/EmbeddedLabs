@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --font-weight-light: 300;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -182,6 +183,15 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .-mt-5 {
+    margin-top: calc(var(--spacing) * -5);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-\[6px\] {
     margin-top: 6px;
   }
@@ -191,17 +201,26 @@
   .mt-\[16px\] {
     margin-top: 16px;
   }
-  .mt-\[44px\] {
-    margin-top: 44px;
-  }
   .mt-\[60px\] {
     margin-top: 60px;
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
   .mb-\[4px\] {
     margin-bottom: 4px;
+  }
+  .-ml-1 {
+    margin-left: calc(var(--spacing) * -1);
+  }
+  .-ml-1\.5 {
+    margin-left: calc(var(--spacing) * -1.5);
+  }
+  .-ml-\[5px\] {
+    margin-left: calc(5px * -1);
   }
   .flex {
     display: flex;
@@ -339,6 +358,9 @@
   .py-\[10px\] {
     padding-block: 10px;
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
   .pt-\[18px\] {
     padding-top: 18px;
   }
@@ -350,6 +372,9 @@
   }
   .pt-\[36px\] {
     padding-top: 36px;
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
   .pb-\[12px\] {
     padding-bottom: 12px;
@@ -366,6 +391,9 @@
   .font-\[Jost\] {
     font-family: Jost;
   }
+  .font-\[Tomorrow\] {
+    font-family: Tomorrow;
+  }
   .text-\[5em\] {
     font-size: 5em;
   }
@@ -375,12 +403,19 @@
   .text-\[13px\] {
     font-size: 13px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[clamp\(28px\,5vw\,56px\)\] {
     font-size: clamp(28px, 5vw, 56px);
   }
   .leading-\[1\.1\] {
     --tw-leading: 1.1;
     line-height: 1.1;
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .tracking-\[-0\.01em\] {
     --tw-tracking: -0.01em;
@@ -404,6 +439,9 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
@@ -523,17 +561,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
-body {
-  font-family: "Jost";
-  color: var(--ink);
-  background: var(--bg);
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost";
-  font-weight: 500;
-  font-style: italic;
-  margin: 0;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -560,6 +587,10 @@ h1, h2, h3, h4, h5, h6 {
   initial-value: solid;
 }
 @property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
@@ -662,6 +693,7 @@ h1, h2, h3, h4, h5, h6 {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
+      --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;

@@ -15,10 +15,8 @@
     <!-- Custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost&family=Tomorrow:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Jost&family=Tomorrow:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -49,26 +47,25 @@
           class="mt-[10px] font-[Jost] text-[13px] text-[var(--ink-70)] max-[700px]:text-[12px]"
         >
           <a
-            href="/about"
+            href="/"
             class="rounded px-[4px] py-[2px] text-[inherit] hover:bg-[rgba(255,255,255,0.05)]"
           >
-            About
+            Home
           </a>
           <span class="mx-[8px] text-[var(--rule)]">│</span>
           <a
-            href="/projects"
+            href="/"
             class="rounded px-[4px] py-[2px] text-[inherit] hover:bg-[rgba(255,255,255,0.05)]"
           >
             Projects
           </a>
           <span class="mx-[8px] text-[var(--rule)]">│</span>
           <a
-            href="/users"
+            href="/"
             class="rounded px-[4px] py-[2px] text-[inherit] hover:bg-[rgba(255,255,255,0.05)]"
           >
-            Users
-          </a>
-          <span class="mx-[8px] text-[var(--rule)]">│</span
+            Users </a
+          ><span class="mx-[8px] text-[var(--rule)]">│</span
           ><a
             href="https://patreon.com/embeddedlabs"
             target="_blank"
@@ -80,72 +77,48 @@
       </header>
 
       <!-- Main -->
-      <main class="mx-auto max-w-[980px] px-[20px] pt-6 pb-6">
+      <main class="mx-auto max-w-[980px] px-[20px] pt-[36px] pb-[60px]">
         <!-- Hero -->
-        <section class="grid items-start gap-[8px] font-[Tomorrow]">
-          <div
-            class="text-[12px] tracking-[0.14em] text-[var(--ink-70)] uppercase"
+        <section class="grid items-start gap-[8px]" id="about">
+          <aside
+            class="rounded-[6px] border border-[var(--rule)] bg-[rgba(255,255,255,0.05)] p-[18px] shadow-[0_1px_0_rgba(0,0,0,0.4)]"
           >
-            Latest Article - Articles/riley/
-          </div>
-
-          <h1
-            class="-ml-[5px] text-[clamp(28px,5vw,56px)] leading-[1.1] font-light tracking-[-0.01em] text-[var(--ink)] italic max-[700px]:text-[clamp(24px,6vw,40px)]"
-          >
-            Homelabbing: My Journey.
-          </h1>
-
-          <p class="max-w-[60ch] text-[var(--ink-70)]">
-            My experience with Proxmox, PiHole and all things networking.
-          </p>
-
-          <div class="mt-[16px] flex flex-wrap gap-[10px] max-[700px]:flex-col">
-            <a
-              href="/articles/riley"
-              class="inline-flex items-center gap-[8px] rounded-[4px] border border-[var(--rule)] bg-[rgba(255,255,255,0.05)] px-[14px] py-[10px] text-[var(--ink)] shadow-[0_0_4px_rgba(255,255,255,0.2)] hover:shadow-[0_1px_0_rgba(0,0,0,0.2),0_0_4px_rgba(255,255,255,0.3)]"
-            >
-              Read Article
-            </a>
-          </div>
+            <p class="mt-3 mb-5 font-[Tomorrow] text-[18px]">
+              We're just a group of guys who like to make awesome shit, and I'm
+              not talking about some vibe coded piece of ass that's no better
+              than a comp sci freshman's Python calculator.
+            </p>
+            <hr />
+            <p class="-mt-5 mb-3 font-[Tomorrow] text-[18px]">
+              <br /><br />With the rise in the last 10-15 years of technology
+              corporations apparently "striving to build the latest and
+              greatest" they missed out on the most important thing.<br /><br /><b
+                >The user.</b
+              ><br /><br />Tech feels dead inside. There hasn't been any new
+              innovation or ideas, it all feels empty. When was the last time
+              you saw a piece of software or hardware creation truly break the
+              bounds of what was possible? Maybe 5 years? 10? Everyone is
+              focused on making the most amount of money with the least amount
+              of effort, they forgot the reason why these machines were created
+              in the first place. These were just rocks that we somehow
+              persuaded into doing complex math and science calculations, but
+              now we are wasting hours of our day watching cat videos? Don't get
+              me wrong, I find them enjoyable as much as the next guy but we as
+              a species are becoming lazy and reliant on technology to do things
+              for us in the wrong ways. Big tech is more focused on making
+              billions selling your data than they are creating something
+              meaningful. That's where we wish to shift the paradigm, and
+              instead of making some other useless regurgitated piece of shit we
+              strive to bring back innovation and the genuine feeling of being
+              inspired. The feeling of looking over at your friend or colleague
+              and saying "holy shit we just made that". That feeling is worth
+              more than any amount of money. The feeling of creating something
+              that matters. <br /><br />- Riley<br />Co-Founder Embedded Labs
+            </p>
+          </aside>
         </section>
 
         <!-- Section -->
-        <section
-          class="mt-6 grid grid-cols-1 gap-[24px] border-t border-[var(--rule)] pt-[28px] md:grid-cols-[1.2fr_0.8fr]"
-          id="principles"
-        >
-          <article
-            class="rounded-[6px] border border-[var(--rule)] bg-[rgba(255,255,255,0.05)] p-[18px] shadow-[0_1px_0_rgba(0,0,0,0.4)]"
-          >
-            <div
-              class="font-[Tomorrow] text-[12px] tracking-[0.14em] text-[var(--ink-70)] uppercase"
-            >
-              Grid & Type
-            </div>
-            <h2 class="mt-[6px] mb-[4px]">Order first</h2>
-            <p class="font- m-0 font-[Tomorrow]">
-              Generous margins, a visible dot pattern background, and typography
-              mixing ITC Garamond and Jost for retro precision.
-            </p>
-            <ul class="mt-[10px] list-none p-0">
-              <li
-                class="border-b border-dashed border-[rgba(99,99,99,0.7)] py-[8px] last:border-b-0"
-              >
-                ITC Garamond headlines
-              </li>
-              <li
-                class="border-b border-dashed border-[rgba(99,99,99,0.7)] py-[8px] last:border-b-0"
-              >
-                Jost body and labels
-              </li>
-              <li
-                class="border-b border-dashed border-[rgba(99,99,99,0.7)] py-[8px] last:border-b-0"
-              >
-                Grayscale accents for highlights
-              </li>
-            </ul>
-          </article>
-        </section>
       </main>
 
       <!-- Footer -->
